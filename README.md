@@ -4,7 +4,7 @@ Churn is a one of the biggest problem in the telecom industry. Research has show
 
 
 ## STEPS
-1. Loading Data 
+**1. Loading Data** 
 
    The data set is taken from [Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn) and stems the IBM sample data set collection .
 
