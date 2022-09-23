@@ -19,7 +19,7 @@ Churn is a one of the biggest problem in the telecom industry. Research has show
 * Correlation Analysis 
 * Removing highly corelated and unrelated  features 
 
-**4. Train-Test-Split**
+**4. Train Test Split**
 * Split the data set into 80% training data and 20% test data. 
 * The “Churn” column is defined as the target (the “y”), the remaining columns as the features (the “X”).
 * Oversampling data due to skewness of the data
