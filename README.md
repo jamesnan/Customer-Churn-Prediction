@@ -31,7 +31,7 @@ Churn is a one of the biggest problem in the telecom industry. Research has show
 
 **6. Deployment**
 
-   Creating a flask app and deploy it to Heroku at: https://customerchurnpredict.herokuapp.com/
+   Creating a flask app and deploy it to Heroku at: https://pedict-customer-churn.herokuapp.com/
 
 ## Built with
 * numpy
