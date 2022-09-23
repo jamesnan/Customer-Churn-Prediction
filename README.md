@@ -6,11 +6,11 @@ Churn is a one of the biggest problem in the telecom industry. Research has show
 ## STEPS
 1. Loading Data 
 
-The data set is taken from [Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn) and stems the IBM sample data set collection .
+   The data set is taken from [Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn) and stems the IBM sample data set collection .
 
 2. Exploratory Data Analysis
 
-EDA includes few steps as the following: data cleaning, identify and handling inconsistencies (i.e. missing values, duplicated values, skewness, outliers), format correction
+   EDA includes few steps as the following: data cleaning, identify and handling inconsistencies (i.e. missing values, duplicated values, skewness, outliers), format correction
 
 3. Feature Engineering
 * Transform tenure to tenure_grounp
