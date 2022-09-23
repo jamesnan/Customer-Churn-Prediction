@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Churn Prediction</title>
+
+</head>
+
+<body>
+
+ <div class="prediction">
+	<left><h1>Customer Churn Prediction</h1></left>
+    
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+
+      <left>
+      <label for="SeniorCitizen"> Senior Citizen</label>
+      <input type="checkbox" id="SeniorCitizen" name="SeniorCitizen" value=1> <br>
+      <label for="Partner">Has a partner</label> 
+      <input type="checkbox" id="Partner" name="Partner" value=1><br>
+      <label for="Dependents">Has dependents</label>
+      <input type="checkbox" id="Dependents" name="Dependents" value=1><br>
+      <label for="PaperlessBilling">Paperless Billing</label>
+      <input type="checkbox" id="PaperlessBilling" name="PaperlessBilling" value=1><br><br>
+      
+      <div class="dropdown-menu">
+
+            <label for="InternetService">Internet :</label>
+            <select id="InternetService" name="InternetService">
+                <option value=0>No</option>
+                <option value=1>DSL</option>
+                  <option value=2>Fiber optic</option>
+            </select> <br>
+
+            <label for="OnlineSecurity">Online Security:</label>
+              <select id="OnlineSecurity" name="OnlineSecurity">
+                  <option value=0>No</option>
+                  <option value=1>Yes</option>
+              </select><br>
+  
+            <label for="OnlineBackup">Online Backup:</label>
+              <select id="OnlineBackup" name="OnlineBackup">
+                  <option value=0>No</option>
+                  <option value=1>Yes</option>
+            </select><br>
+  
+            <label for="DeviceProtection">Device Protection:</label>
+              <select id="DeviceProtection" name="DeviceProtection">
+                  <option value=0>No</option>
+                  <option value=1>Yes</option>
+              </select><br>
+ 
+            <label for="TechSupport">Tech Support:</label>
+                <select id="TechSupport" name="TechSupport">
+                    <option value=0>No</option>
+                    <option value=1>Yes</option>
+                </select><br>
+  
+            <label for="StreamingTV">Streaming TV:</label>
+              <select id="StreamingTV" name="StreamingTV">
+                  <option value=0>No</option>
+                  <option value=1>Yes</option>
+              </select><br>
+  
+            <label for="StreamingMovies">Streaming Movies:</label>
+              <select id="StreamingMovies" name="StreamingMovies">
+                  <option value=0>No</option>
+                  <option value=1>Yes</option>
+              </select><br>
+
+
+      <label for="Contract">Contract:</label>
+        <select id="Contract" name="Contract">
+            <option value=0>Month-to-Month</option>
+            <option value=1>One-Year</option>
+              <option value=2>Two-Year</option>
+        </select>  <br>
+  
+      <label for="PaymentMethod">Payment:</label>
+        <select id="PaymentMethod" name="PaymentMethod">
+            <option value=0>Automatic: Bank Transfer</option>
+            <option value=1>Automatic: Credit Card</option>
+              <option value=2>Electronic Check</option>
+              <option value=3>Mailed Check</option>
+        </select><br><br>
+           
+      <label for="MonthlyCharges">Monthly Charges:</label>
+      <input type="number"  min="1" max="500" name="MonthlyCharges" size="8" required="required" /><br>
+      <label for="Tenure in Months">Tenure in Months:</label>
+      <input type="number"  min="1" max="60" name="Tenure"  size="8" required="required" /><br><br>
+  
+      <button type="submit" class="button" style="background-color:#64a0b6">Predict</button>
+      </form><br><br>
+  
+       {{ prediction_text }}
+    </left>
+</div>
+
+ </body>
+</html>
