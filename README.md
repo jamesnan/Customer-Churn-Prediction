@@ -1,9 +1,9 @@
 # Customer-Churn-Prediction
-# Define the problem
+## Define the problem
 Churn is a one of the biggest problem in the telecom industry. Research has shown that the average monthly churn rate among the top 4 wireless carriers in the US is 1.9%. 2%. Customer churn prediction is to measure why customers are leaving a business. While it's not the happiest measure, it's a number that can give your company the hard truth about its customer retention. 
 
 
-# STEPS
+## STEPS
 1. Loading Data 
 
 The data set is taken from [Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn) and stems the IBM sample data set collection .
@@ -31,7 +31,7 @@ EDA includes few steps as the following: data cleaning, identify and handling in
 6. Deployment
 Creating a flask app and deploy it to Heroku at: https://customerchurnpredict.herokuapp.com/
 
-# Built with
+## Built with
 * numpy
 * pandas 
 * seaborn
